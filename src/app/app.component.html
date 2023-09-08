@@ -2,15 +2,19 @@
   <div class="row">
     <div class="col">
       <h1>Aplicacion de calculadora</h1>
-      <label>Operando A</label>
+      <form action="">
+        <label>Operando A</label>
+        <br>
+        <input type="number" class="form-control" [(ngModel)]="numA" placeholder="Escribe el Operando A">
+        <br>
+        <label>Operando B</label>
+        <br>
+        <input type="number" class="form-control" [(ngModel)]="numB" placeholder="Escribe el Operando B">
+        <br>
+        <button class="btn btn-primary" (click)="suma()">Sumar</button>
+      </form>
+
       <br>
-      <input type="number" class="form-control" [(ngModel)]="numA" placeholder="Escribe el Operando">
-      <br>
-      <label>Operando B</label>
-      <br>
-      <input type="number" class="form-control" [(ngModel)]="numB" placeholder="Escribe el Operando">
-      <br>
-      <button class="btn btn-primary" (click)="suma()">Sumar</button>
       <p>Resultado: <span *ngIf="resultado > 0">{{resultado}}</span></p>
     </div>
   </div>

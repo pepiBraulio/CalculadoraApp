@@ -6,11 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  numA: number = 0;
-  numB: number = 0;
   resultado: number = 0;
 
-  suma():void{
-    this.resultado = this.numA + this.numB;
+  agregandoResultado(resultadoS: number){
+    this.resultado = resultadoS;
   }
 }

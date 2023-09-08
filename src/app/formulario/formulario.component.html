@@ -1,1 +1,12 @@
-<p>formulario works!</p>
+
+<form action="">
+    <label>Operando A</label>
+    <br>
+    <input type="number" class="form-control" [(ngModel)]="numA" name="numA" placeholder="Escribe el Operando A">
+    <br>
+    <label>Operando B</label>
+    <br>
+    <input type="number" class="form-control" [(ngModel)]="numB" name="numB" placeholder="Escribe el Operando B">
+    <br>
+    <button class="btn btn-primary" (click)="suma()">Sumar</button>
+  </form>
